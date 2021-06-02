@@ -1,0 +1,15 @@
+.row-produtos{
+    position: relative;
+    .bloco-busca{
+        position: absolute;
+        top: gr(-75);
+        left: gr(20);
+        z-index: 5;
+        width: 90%;
+        .filtro{
+            border: 1px solid $departamentosListaTitleShadowColor;
+            width: 100%;
+            padding: gr(5) gr(10);
+        }
+    }
+}

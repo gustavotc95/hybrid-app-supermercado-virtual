@@ -1,0 +1,172 @@
+.row-produtos-carrinho{
+    padding-bottom: 90px;
+    .msg{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        margin-top: -15px;
+        background: #fff;
+        height: 80vh;
+        margin-bottom: -90px;
+        font-size: 25px;
+        img{
+            margin-top: gr(35px);
+            margin-bottom: gr(25px);
+            position: relative;
+            left: -20px;
+        }
+    }
+    .bloco-produto-carrinho {
+        background: #fff;
+        display: flex;
+        position: relative;
+        padding: gr(15px) gr(15px) gr(15px) gr(5px);
+        margin-bottom: gr(15px);
+        max-width: 425px;
+        margin-left: auto;
+        margin-right: auto;
+        .image{
+            max-height: gr(100px);
+            text-align: center;
+            max-width: gr(100px);
+            img{
+                margin: 0 auto;
+                width: 100px;
+                max-width: none;
+            }
+        }
+        .infos{
+            flex: 1;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            .title{
+                flex: 1 1 100%;
+            }
+        }
+        .total{
+            flex: 1 1 100%;
+            display: flex;
+            justify-content: space-between;
+            .botoes{
+                display: flex;
+                align-items: center;
+                margin-top: auto;
+                .icon{
+                    width: gr(24px);
+                    height: gr(24px);
+                    display: inline-block;
+                    background: #484848;
+                    margin-left: gr(25px);
+                }
+            }
+            .preco{
+    
+            }
+        }
+    }
+}
+
+.escolha-endereco{
+    padding-bottom: 90px;
+    .enderecos{
+        &-item{
+            margin-bottom: 15px;
+        }
+        .custom-control-label::before{
+            border: 1px solid #ccc;
+            top: gr(15px);
+        }
+        .custom-control-label::after{
+            top: gr(15px);
+        }
+    }
+    .btn-endereco{
+        margin-top: 75px;
+    }
+
+    .modal-endereco{
+        .bloco-endereco-modal{
+            padding: gr(25);
+        }
+    }
+}
+
+.row-formas-entrega{
+    .tipo-entrega{
+        .entrega-item{
+            margin-bottom: gr(15px);
+            .custom-control-label::before{
+                border: 1px solid #ccc;
+                top: gr(15px);
+            }
+            .custom-control-label::after{
+                top: gr(15px);
+            }
+        }
+    }
+}
+
+.bloco-bottom-cart{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    .preco-total-carrinho{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background: #fff;
+        border-top: 1px solid #ccc;
+        span{
+            color: #000;
+            font-weight: 600;
+            &.valor{
+                color: #2ea200;
+            }
+        }
+    }
+    .btn{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        .icon{
+            width: gr(15px);
+            height: gr(15px);
+            display: inline-block;
+            background: #fff;
+            margin-left: gr(15px);
+        }
+    }
+}
+
+.row-formas-pagamento{
+    .tipo-pagamento{
+        .title{
+            font-size: gr(20px);
+            margin-bottom: gr(20px);
+            font-weight: 600;
+        }
+        .pagamento-item{
+            margin-bottom: gr(15px);
+            .custom-control-label{
+                span{
+                    line-height: 1;
+                    font-size: gr(14px);
+                    display: block;
+                }
+            }
+            .custom-control-label::before{
+                border: 1px solid #ccc;
+                top: gr(4px);
+            }
+            .custom-control-label::after{
+                top: gr(4px);
+            }
+        }
+    }
+}

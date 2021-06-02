@@ -1,0 +1,161 @@
+.app-menu{
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    .menu-header{
+        background: $cor-bg-menu-header;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 15px 5px 15px 15px;
+        .col-user-info{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+            div{
+                flex: 1 100%;
+            }
+            .nome-usuario{
+                font-family: $font-family-light;
+                font-weight: 300;
+                font-style: normal;
+                font-size: gr(23px);
+                color: #ffffff;
+                line-height: 1;
+                margin-bottom: gr(15)
+            }
+            .editar-perfil{
+                font-family: $font-family-medium;
+                font-weight: 500;
+                font-style: normal;
+                font-size: gr(11px);
+                color: $cor-menu-header-link;
+                line-height: 1;
+                text-transform: uppercase;
+                display: block;
+            }
+        }
+        .close-icon{
+            width: gr(35);
+            height: gr(35);
+            cursor: pointer;
+            margin-right: gr(5);
+            svg{
+                color: $cor-close-btn;
+                width: gr(35);
+                height: gr(35);
+            }
+        }
+    }
+    .menu-link{
+        background: $cor-bg-menu-lista-link;
+        flex: 1;
+        .item{
+            .link{
+                font-family: $font-family-medium;
+                font-weight: 300;
+                font-style: normal;
+                font-size: gr(23px);
+                color: $cor-menu-link;
+                line-height: 1;
+                display: block;
+                padding-left: gr(15px);
+                text-decoration: none;
+                margin-bottom: gr(15px);
+                display: flex;
+                align-items: center;
+                .icon{
+                    margin-right: gr(10px);
+                    width: gr(17);
+                    height: gr(17);
+                }
+            }
+            &:first-child{
+                padding-top: gr(15);
+            }
+            &:last-child{
+                .link{
+                    border-bottom: none; 
+                    padding-bottom: gr(85);
+                }
+            }
+        }
+    }
+    .menu-footer{
+        background: $cor-bg-menu-footer;
+        padding-top: gr(25);
+        padding-bottom: gr(25);
+        padding-left: gr(15);
+        .redes-sociais{
+            .item{
+                display: inline-block;
+                width: gr(30);
+                height: gr(30);
+                margin-right: gr(10px);
+            }
+        }
+    }
+}
+
+.bloco-menu {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100vw;
+    min-height: 100vh;
+    left: -100vw;
+    display: flex;
+    .app-menu {
+        flex: 0 gr(325); 
+        width: gr(325);
+        overflow: scroll;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    .to-close-menu {
+        flex: 1;
+    }
+}
+
+.bloco-menu{
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    &.menu-active{
+        left: 0px;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        .to-close-menu{
+            -webkit-animation: opacidadeMenu 1s;
+            animation: opacidadeMenu 1s;
+            opacity: 0.4;
+            background: #000;
+        }
+    }
+}
+
+@keyframes opacidadeMenu {
+    0%   {
+        opacity: 0;
+        background: #000;
+    }
+    40%{
+        opacity: 0;
+        background: #000;
+    }
+    100% {
+        opacity: 0.4;
+        background: #000;
+    }
+}

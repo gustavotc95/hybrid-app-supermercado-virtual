@@ -1,0 +1,84 @@
+.bloco-pedidos{
+    .pedidos{
+        .pedidos-item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            background: #fff;
+            margin-bottom: 15px;
+            padding: 15px;
+            a{
+                color: inherit;
+                width: 100%;
+            }
+            .pedido-info{
+                width: 100%;
+                .mais-detalhes{
+                    color: #f00;
+                    text-transform: uppercase;
+                    display: block;
+                    text-align: center;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+.bloco-pedidos-detalhe{
+    .pedido-detalhe{
+        .section-title{
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        .pedido-info{
+            background: #fff;
+            padding: gr(15px);
+            margin-bottom: 20px;
+            span{
+                font-weight:  500;
+                color: #f00;
+            }
+        }
+        .bloco-produto-carrinho {
+            background: #fff;
+            display: flex;
+            position: relative;
+            padding: gr(15px) gr(15px) gr(15px) gr(5px);
+            margin-bottom: gr(15px);
+            max-width: 425px;
+            margin-left: auto;
+            margin-right: auto;
+            .image{
+                max-height: gr(100px);
+                text-align: center;
+                max-width: gr(100px);
+                img{
+                    margin: 0 auto;
+                    width: 100px;
+                    max-width: none;
+                }
+            }
+            .infos{
+                flex: 1;
+                align-items: center;
+                display: flex;
+                flex-wrap: wrap;
+                .title{
+                    flex: 1 1 100%;
+                }
+            }
+            .total{
+                flex: 1 1 100%;
+                display: flex;
+                justify-content: space-between;
+                .preco{
+        
+                }
+            }
+        }
+    }
+}
+

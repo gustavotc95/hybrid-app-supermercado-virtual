@@ -1,0 +1,27 @@
+.lista-detalhe{
+    padding-bottom: 70px;
+    .row-produtos {
+        .bloco-produto {
+            .botoes {
+                &.botoes-quantidade{
+                    max-width: 170px;
+                    margin: 15px auto 0;
+                }
+        
+            }
+        }
+    }
+    .botoes{
+        .add-carrinho-full{
+            background: $addCarrinhoBgColor;
+            color: $addCarrinhoColor;
+            padding: 20px 20px;
+            font-size: 1rem;
+            border: none;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}

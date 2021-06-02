@@ -1,0 +1,42 @@
+/* BASE */
+@import "../../../node_modules/swiper/dist/css/swiper";
+@import "bootstrap/bootstrap";
+
+@import "base/variaveis";
+@import "base/mixins";
+@import "base/base";
+@import "base/fontes";
+
+
+/* COMPONENTS */
+
+@import "components/header";
+@import "components/footer";
+@import "components/menu";
+@import "components/icones";
+@import "components/slide";
+@import "components/departamentos";
+@import "components/departamento";
+@import "components/destaques";
+@import "components/lista-produtos";
+@import "components/bloco-produto";
+@import "components/modal";
+@import "components/botoes";
+@import "components/overflow-menu";
+
+
+
+/* PAGINAS */
+
+@import "pages/home";
+@import "pages/produtos";
+@import "pages/carrinho";
+@import "pages/enderecos";
+@import "pages/pedidos";
+@import "pages/login";
+@import "pages/minhas-listas";
+@import "pages/lista-detalhe";
+@import "pages/notificacoes";
+
+
+

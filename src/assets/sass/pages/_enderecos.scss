@@ -1,0 +1,24 @@
+.enderecos-list{
+    padding-bottom: 90px;
+    .enderecos{
+        &-item{
+            padding: 15px;
+        }
+        .custom-control-label::before{
+            border: 1px solid #ccc;
+            top: gr(15px);
+        }
+        .custom-control-label::after{
+            top: gr(15px);
+        }
+    }
+    .btn-endereco{
+        margin-top: 75px;
+    }
+
+    .modal-endereco{
+        .bloco-endereco-modal{
+            padding: gr(25);
+        }
+    }
+}

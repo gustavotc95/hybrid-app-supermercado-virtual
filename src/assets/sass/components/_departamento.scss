@@ -1,0 +1,23 @@
+.Departamento, .departamento{
+    background: #fff;
+}
+.row-categorias{
+    .item{
+        margin-bottom: 3%;
+        .image{
+            text-align: center;
+        }
+        .title{
+            text-align: center;
+            line-height: 1;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-height: 32px;
+        }
+    }
+}

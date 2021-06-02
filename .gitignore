@@ -1,0 +1,16 @@
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+build/
+
+# App platform binaries and built files
+/platforms
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

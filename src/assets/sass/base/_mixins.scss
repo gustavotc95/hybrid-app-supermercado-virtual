@@ -1,0 +1,154 @@
+
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+/* exemplo 
+
+input,  
+textarea {  
+    @include input-placeholder {
+        color: #000;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+*/
+
+@mixin campo-input{
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    padding: gr(15px) gr(20px);
+    margin-bottom: gr(3px);
+    font-family: $font-family-light;
+    font-weight: 300;
+    font-style: normal;
+    color: #000;
+    font-size: gr(17.5px);
+
+    @include input-placeholder {
+        font-family: $font-family-light-italic;
+        font-weight: 300;
+        font-style: italic;
+        color: #bcbcbc;
+        font-size: gr(17.5px);
+    }
+}
+
+@mixin search-input{
+    display: flex;
+    border: 1px solid #d1d1d1;
+    margin-bottom: gr(20);
+    .search{
+        flex: 1;
+        border: none;
+        background: #eaeaea;
+        font-family: $font-family-light-italic;
+        font-weight: 300;
+        font-style: italic;
+        font-size: gr(17.5);
+        padding-left: gr(20);
+        padding-right: gr(20);
+    }
+    input[type="search" i]::-webkit-search-cancel-button{
+        opacity: 0;
+        display: none;
+    }
+    .icone{
+        width: gr(50);
+        height: gr(50);
+        display: block;
+        background: #c3d500;
+        border-left: 1px solid #d1d1d1;
+        svg, img{
+            width: gr(24);
+            height: gr(24);
+            color: #fff;
+            padding: gr(13);
+            box-sizing: content-box;
+            path{
+                width: gr(24);
+                height: gr(24);
+            }
+        }
+    }
+}
+
+@mixin campo-textarea{
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    margin: 0;
+    padding: gr(15px) gr(20px);
+    height: gr(300px);
+    white-space: normal;
+    box-sizing: border-box;
+
+    font-family: $font-family-light;
+    font-weight: 300;
+    font-style: normal;
+    color: #000;
+    font-size: gr(17.5px);
+
+    @include input-placeholder {
+        font-family: $font-family-light;
+        font-weight: 300;
+        font-style: normal;
+        color: #bcbcbc;
+        font-size: gr(17.5px);
+    }
+}
+
+@function z($name) {
+    @if index($z-indexes, $name) {
+        @return (length($z-indexes) - index($z-indexes, $name)) + 1;
+    } @else {
+        @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+        @return null;
+    }
+}
+$z-indexes: (
+    "menu-mobile",
+    "menu",
+    "submenu",
+    "filtro-hover-canais"
+);
+
+//z-index: z('site-header');
+
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@function get-value($n) {
+    @return $n / ($n * 0 + 1);
+}
+
+@mixin font-size($font-size) {
+
+    $base-px-size: $font-base;
+
+    font-size: $font-size;
+    font-size: (get-value($font-size) / $base-px-size) + rem;
+}
+
+@function getrem($n) {
+    $base-px-size: $font-base;
+
+    @return (get-value($n) / $base-px-size) + rem;
+}
+
+@function gr($n) {
+    @return getrem($n);
+}
+
+

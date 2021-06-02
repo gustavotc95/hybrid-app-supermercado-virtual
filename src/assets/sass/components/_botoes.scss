@@ -1,0 +1,106 @@
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+  
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.number-input {
+    border: 2px solid $btnAddCartBorderColor;
+    display: inline-flex;
+}
+
+.number-input,
+.number-input * {
+    box-sizing: border-box;
+}
+
+.number-input button {
+    outline:none;
+    -webkit-appearance: none;
+    background-color: $btnAddCartBgSymbolsColor;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    width: gr(24);
+    height: gr(24);
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+}
+
+.number-input button:before,
+.number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: gr(10);
+    height: 2px;
+    background-color: $btnAddCartSymbolsColor;
+    transform: translate(-50%, -50%);
+}
+.number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type=number] {
+    max-width: gr(30);
+    padding: gr(4);
+    border: solid $btnAddCartInternalBorderColor;
+    border-width: 0 1px;
+    font-size: gr(15);
+    height: gr(24);
+    font-weight: bold;
+    text-align: center;
+    color: $btnAddCartNumberColor;
+    background-color: $btnAddCartBgNumberColor;
+    border-top: $btnAddCartBgNumberBorderTop;
+    border-bottom: $btnAddCartBgNumberBorderBottom;
+}
+
+.botoes-sociais{
+  .btn-login-social {
+    width: 100%;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 15px 0px;
+    color: #fff;
+    margin-bottom: 15px;
+    &.btn-face{
+      background: #4267b2;
+    }
+    &.btn-google{
+      background: #dc4e41;
+      .icon{
+        width: gr(25px);
+      }
+    }
+    span{
+      flex: 1 1 65%;
+      text-align: left;
+    }
+    .icon{
+      width: gr(15px);
+      height: gr(25px);
+      display: inline-block;
+      background: #fff;
+      flex: 1 1 20%;
+      display: flex;
+      margin-left: 35px;
+    }
+  }
+}
+
+.btn{
+  &.btn-primary-full{
+    width: 100%;
+    border-radius: 0px;
+  }
+}

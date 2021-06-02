@@ -1,0 +1,150 @@
+.icon{
+    background-color: $cor-menu-link-icon;
+    &.icon-header{
+        background-color: $cor-icon-header;
+    }
+    &.cart-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/cart.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/cart.svg') no-repeat 50% 50%;
+    }
+    &.search-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/search.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/search.svg') no-repeat 50% 50%;
+    }
+    &.exit-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/exit.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/exit.svg') no-repeat 50% 50%;
+    }
+    &.home-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/home.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/home.svg') no-repeat 50% 50%;
+    }
+    &.user-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/user.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/user.svg') no-repeat 50% 50%;
+    }
+    &.money-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/money.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/money.svg') no-repeat 50% 50%;
+    }
+    &.list-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/list.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/list.svg') no-repeat 50% 50%;
+    }
+    &.lista-number-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/lista-number.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/lista-number.svg') no-repeat 50% 50%;
+    }
+    &.site-map-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/site-map.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/site-map.svg') no-repeat 50% 50%;
+    }
+    &.bell-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/bell.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/bell.svg') no-repeat 50% 50%;
+    }
+    &.phone-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/phone.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/phone.svg') no-repeat 50% 50%;
+    }
+    &.oferta-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/oferta.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/oferta.svg') no-repeat 50% 50%;
+    }
+    &.comments-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/comments.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/comments.svg') no-repeat 50% 50%;
+    }
+    &.info-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/info.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/info.svg') no-repeat 50% 50%;
+    }
+    &.departamentos-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/departamentos.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/departamentos.svg') no-repeat 50% 50%;
+    }
+    &.add-lista-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/add-lista.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/add-lista.svg') no-repeat 50% 50%;
+    }
+    &.back-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/back.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/back.svg') no-repeat 50% 50%;
+    }
+    &.overflow-menu-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/overflow-menu.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/overflow-menu.svg') no-repeat 50% 50%;
+    }
+    &.facebook-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/facebook.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/facebook.svg') no-repeat 50% 50%;
+    }
+    &.google-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/google.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/google.svg') no-repeat 50% 50%;
+    }
+    &.arrow-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/arrow.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/arrow.svg') no-repeat 50% 50%;
+    }
+    &.lixeira-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/lixeira.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/lixeira.svg') no-repeat 50% 50%;
+    }
+    &.map-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/map.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/map.svg') no-repeat 50% 50%;
+    }
+    &.box-icon{
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-size: url('./assets/img/icons/box.svg') no-repeat 50% 50%;
+        mask: url('./assets/img/icons/box.svg') no-repeat 50% 50%;
+    }
+}
